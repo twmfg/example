@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #38382b;
+    color: #e2f !important;
+}
+h1, h2, h3, h4, p, .logo, button {
+    font-family: 'Trebuchet MS';
+    color: #ed9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 10%;
+    align-items: center;
+}
+.logo {
+    font-size: 2.4em;
+    font-weight: bolder;
+}
+
+header button {
+    border: 2px solid magenta;
+    background: transparent;
+    font-size: 1.4em;
+    padding: 8px 1.8em;
+    border-radius: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6em;
+}
+
+main h1 {
+    font-size: 4em;
+    text-transform: capitalize;
+}
+
+main p {
+    width: 40%;
+    text-align: center;
+    font-size: 1.4em;
+    margin: 12px 0;
+}
+
+.get-started{
+    border: none;
+    background-color: magenta;
+    color: #fff;
+    font-size: 1.7em;
+    text-transform: capitalize;
+    margin: 2em 0 0 0;
+    padding: 1em 3em;
+    border-radius: 100px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.291);
+}
+
+.main__img{
+    display: flex;
+    justify-content: center;
+    margin: 7% 0;
+}
+
+.main__img img {
+    width:800px;
+    border: 10px solid red;
+}
+
+.stats {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats h2 {
+    font-size: 5em;
+}
+
+.stats p {
+    font-size: 1.4em;
+    margin-top: 10px;
+    color: grey;
+}
+
+.grow__together{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grow__together h2 {
+    font-size: 3.3em;
+    text-transform: capitalize;
+}
+
+.grow__together p {
+    font-size: 1.4em;
+    width: 70%;
+    padding: 1em 0 0 0;
+}
+
+.flowing__convo {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flowing__convo h2 {
+    font-size: 3.3em;
+    text-transform: capitalize;
+}
+
+.flowing__convo p {
+    font-size: 1.4em;
+    padding: 1em 0 0 0;
+}
+
+.r_t_b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20% 0;
+}
+
+.r_t_b h2 {
+    font-size: 3em;
+    text-transform: capitalize;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 7%;
+}
+
+.footer-1, .footer-2 {
+    flex-basis: 40%;
+}
+
+.footer-1 p:nth-child(2){
+   font-size: 1.2em;
+   width: 70%;
+   padding: 10px 0;
+}
+
+.footer-1 .fa-solid {
+    color: white;
+    padding-right: 10px;
+}
+
+.footer-1 p:nth-child(3), .footer-1 p:nth-child(4){
+    padding: 10px 0;
+    font-size: 1.2em;
+}
+
+
+.my__socials {
+    display: flex;
+    gap: 15px;
+}
+
+.my__socials a {
+    color: white;
+    font-size: 2.3em;
+    margin-top: 2em;
+}
+
+.footer-2 h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.footer-2 p{
+    width: 80%;
+    font-size: 1.1em;
+    padding: 1em 0;
+    line-height: 1.4;
+}
+
+.footer-2 input{
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2em;
+}
+
+.footer-2 #submit {
+    background-color: magenta;
+    color: white;
+    
+}
+
+
+
+@media (max-width:1301px){
+
+    main h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 1095px){
+    main p {
+        width: 90%;
+    }
+    .main__img img{
+        width: 500px;
+    }
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .stats .stats__1 {
+        margin-bottom: 5em;
+    }
+
+    .grow__together {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10% auto;
+    }
+    .grow__together p{
+        margin: auto;
+    }
+
+    .flowing__convo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 15% auto;
+    }
+    .flowing__convo img {
+        width: 300px;
+        margin-bottom: 3em;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 830px){
+    main h1{
+        font-size: 12.8vw;
+        width: 70%;
+        text-align: center;
+    }
+    main p{
+        font-size: 4.8vw;
+    }
+    main button, .r_t_b button {
+        padding: 17px 50px !important;
+        font-size: 1.5em !important;
+    }
+
+    img{
+        width: 300px !important;
+    }
+
+    .stats h2{
+        font-size: 25vw;
+    }
+    .stats p{
+        font-size: 7vw;
+        color: #edf;
+    }
+    .grow__together h2, .flowing__convo h2 {
+        font-size: 11.5vw;
+        color: lightblue;
+    }
+    .grow__together p, .flowing__convo p {
+        font-size: 6.5vw;
+        width: 100%;
+        color: #edf;
+        text-align: justify;
+        line-height: 1.4;
+
+    }
+    .r_t_b h2{
+        font-size: 6vw;
+
+    }
+
+    header {
+        flex-direction: column;
+    }
+    header .logo{
+        margin: 0.3em 0;
+    }
+}
+
+@media (max-width: 390px){
+    main button, .r_t_b button {
+        font-size: 1.3em !important;
+        padding: 10px 25px !important;
+        background-image: linear-gradient(rgba(255, 0, 0, 0.563), black);
+    }
+    input{
+        width: 80% !important;
+    }
+}
